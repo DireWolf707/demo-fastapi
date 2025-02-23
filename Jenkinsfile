@@ -3,10 +3,6 @@ properties([pipelineTriggers([githubPush()])])
 pipeline {
     agent any
 
-    triggers {
-        githubPush() 
-    }
-
     environment {
         CONTAINER_ENVIRONMENT = "python:3.12-alpine"
         CONTAINER_PORT = "8000"
