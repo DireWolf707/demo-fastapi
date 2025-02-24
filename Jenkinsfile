@@ -4,6 +4,7 @@ pipeline {
     environment {
         CONTAINER_ENVIRONMENT = "python:3.12-alpine"
         CONTAINER_PORT = "8000"
+        HOST_PORT = "3001"
     }
 
     stages {
